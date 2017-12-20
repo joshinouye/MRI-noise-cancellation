@@ -51,7 +51,7 @@ csSignal = signal - alignedNoise;
     function shiftedData = shiftData(data,lag)
         %Shifts DATA to the right by LAG samples
         if lag==0
-            shiftedData=Data;
+            shiftedData=data;
             return
         elseif lag<0
             shiftedData = zeros(size(data));
